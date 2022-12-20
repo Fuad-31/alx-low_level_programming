@@ -1,4 +1,4 @@
-#include "main.h"
+#iclude "main.h"
 
 /**
  * _strcpy - a function that copies the string pointed to by src,
@@ -11,9 +11,12 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *arr = dest;
+	int i = 0;
 
-	while (*src)
-		*dest++ = *src++;
-	return (*arr);
+	while (src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	return (dest);
 }
