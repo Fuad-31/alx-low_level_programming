@@ -8,14 +8,13 @@
  */
 
 void puts2(char *str)
-
 {
 	int arr = 0, i = 0;
 
 	while (str[arr] != '\0')
-			arr++;
-			arr -= 1;
+		arr++;
+	arr -= 1;
 	for (; i <= arr; i += 2)
-			_putchar(str[i]);
+		_putchar(str[i]);
 	_putchar('\n');
 }
