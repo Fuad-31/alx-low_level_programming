@@ -8,12 +8,19 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int i = 0, j;
-
-	for (; i < 8; i++)
+	while (*haystack != '\0')
 	{
-		for (j = 0; j < 8; j++)
-			_putchar(a[i][j]);
-		_putchar('\n');
+		char *substr = needle;
+		char *base_address = haystack;
+
+		while (*haystack != '\0' && *substr != '\0' && *substr == *haystack)
+		{
+			substr++;
+			haystack++;
+		}
+		if (*substr == '\0')
+			return (base_address);
+		haystack = base_address + 1;
 	}
+	return (0);
 }
