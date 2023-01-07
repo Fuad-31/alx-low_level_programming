@@ -1,57 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <ctype.h>
 
 /**
- * num_checker - checks if a given char is number or not
- * @a: char to be checked
- * Return: 1, if its a number, else 0
+ * main - A program that adds positive numbers
+ * @argc: The arguments' counter
+ * @argv: The argument's values
+ * Return: Always 0 (Success)
  */
 
-int num_checker(char *a)
+int main(int argc, char **argv)
 
 {
-	int i, num, len;
+	int num, result = 0, i;
 
-	i = 0;
-	num = 0;
-	len = strlen(a);
-	while (i < len)
+	while (argc-- > 1)
 	{
-		if (a[i] < '0' || a[i] > '9')
+		for (i = 0; argv[argc][i]; i++)
 		{
-			return (-1);
+			if (!(isdigit(argv[argc][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-			num = num * 10 + (a[i] - '0');
-			i++;
+		num = atoi(argv[argc]);
+		result += num;
 	}
-	return (num);
-}
-
-/**
- * main - add positive numbers
- * @argc: arguement count
- * @argv: array of pointers to arguement strings
- * Return: result of addition or 1
- */
-
-int main(int argc, char *argv[])
-
-{
-	int i, num, sum;
-
-	sum = 0;
-	for (i = 1; i < argc; i++)
-	{
-		num = num_checker(argv[i]);
-		if (num == -1)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		sum += num;
-	}
-	printf("%d\n", sum);
+	printf("%d\n", result);
 	return (0);
 }
