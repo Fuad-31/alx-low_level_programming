@@ -1,12 +1,12 @@
 #ifndef MAIN_H
-#define MAIN_H
-
-/**
-* file: main.h
-* Athr: Fuad aminu Isa 
-* Desc: header file that contain all the function and 
-* the prototype of the function _putchar
-*/
+#define MAIN_H                                                                                                                                         
+                                                          
+/**                                                                                                                                                    
+ * file: main.h                                                                                                                                        
+ * Athr: Fuad aminu Isah                                                                                                                               
+ * Desc: header file that contain all the functions and                                                                                                
+ * the prototype of the function _putchar
+ */                                                                                                
 
 int _putchar(char c);
 int _islower(int c);
@@ -27,5 +27,5 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle);
 #endif
