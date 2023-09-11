@@ -6,16 +6,14 @@
  * main - does my stuff
  * @n: n is the input
  *
- * Desc: The prog prints is -ve if n > 0, is -ve if < 0 and is zero if = 0
+ * Desc: 'The prog prints is -ve if n > 0, is -ve if < 0 and is zero if = 0'
  * Return: Always 0
  */
 
 int main(void)
 {
-	int n;
-
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	int n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
 	{
