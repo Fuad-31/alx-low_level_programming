@@ -5,16 +5,18 @@
 /**
  * main - Entry point
  * @n: input variable
- * @m: result of the modulo opration
  *
  * Description: 'The program is used to test the equality of n'
  */
 
 int main(void)
 {
+	int n;
+	int m;
+
 	srand(time(0));
-	int n = rand() - RAND_MAX / 2;
-	int m = n % 10;
+	n = rand() - RAND_MAX / 2;
+	m = n % 10;
 
 	if (m > 5)
 	{
