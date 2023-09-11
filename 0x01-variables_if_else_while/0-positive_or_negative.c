@@ -1,9 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - does my stuff
+ * @n: n is the input
+ *
+ * Description: The program prints is -ve if n is greater than zero, is -ve if < zero and is zero if = zero
+ * Return: Always 0
+ */
+
 int main(void)
 {
 	int n;
