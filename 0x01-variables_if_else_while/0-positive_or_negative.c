@@ -6,7 +6,7 @@
  * main - does my stuff
  * @n: n is the input
  *
- * Description: The prog prints is -ve if n > 0, is -ve if < 0 and is zero if = 0
+ * Desc: The prog prints is -ve if n > 0, is -ve if < 0 and is zero if = 0
  * Return: Always 0
  */
 
